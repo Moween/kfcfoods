@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet" type="text/css">
 
   <!--Stylesheets-->
-  <link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
   <!--Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,21 +22,33 @@
 <body>
   <!-- Page header -->
   <header id="main-header">
-    <img id="brand-logo" src="images/brand_logo.jpg" alt="brand_logo">
-    <nav class="navbar dropdown">
-      <i class="hidden fa fa-bars"></i>
-      <ul class="nav-list dropdown-content">
-        <li><a class="nav-link" href="#">HOME</a></li>
-        <li><a class="nav-link" href="#">ERRAND SERVICES</a></li>
-        <li><a class="nav-link" href="#">CONTACT US</a></li>
-        <li><a class="nav-link" href="#">ORDER</a></li>
-        <li><a class="nav-link" href="#">BLOG</a></li>
+    <div id="header-icons">
+      <span id="searchbar">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <i class="fa fa-search search-icon"></i>
+      </span>
+    </div>
+      <nav class="navbar dropdown">
+        <i class="dropbtn fa fa-bars"></i>
+        <ul class="dropdown-content">
+          <li><a class="nav-link"  href="#">Menu</a></li>
+          <li><a class="nav-link" href="#">Order</a></li>
+          <li><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Donate</a></li>
+        </ul>
+      </nav>
+    <a href="index.html"><img id="brand-logo" src="images/brand_logo.jpg" alt="brand_logo"></a>
+    <nav class="navbar2">
+      <ul class="nav-list">
+        <li><a class="nav-link"  href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Contact Us</a></li>
+        <li><a class="nav-link" href="#">Order</a></li>
+        <li><a class="nav-link" href="#">Blog</a</li>
+        <li><a class="nav-link" id="hidden" href="#">Errand Services</a></li>
+        <li><a class="nav-link" id="hidden" href="#">About</a></li>
       </ul>
     </nav>
-    <span id="searchbar">
-      <input type="text" id="search" name="search" placeholder="search">
-      <i class="fa fa-search search-icon"></i>
-    </span>
+
   </header>
 
   <!--Main content-->
@@ -49,7 +61,7 @@
       </div>
     </section>
 
-    <section class="section2">
+    <section id="section2">
       <div class="menu-box1">
         <div class="menu">
           <h2>Afang Soup</h2>
@@ -89,9 +101,10 @@
       </div>
     </section>
 
-    <section class="section3">
-      <h2>KFC Delicious Nigerian Foods</h2>
-      <h3>LOVE BY MANY-ORDER ONLINE</h3>
+    <section id="section3">
+      <h2>KFC Menu</h2>
+      <h4>You Don't Need a Silver Spoon to Eat Good Food.</h4>
+      <h3>LOVE BY MANY</h3>
       <img class="food-img" src="images/smallchops.jpg" alt="smallchops_img">
       <img class="food-img" src="images/friedrice.jpg" alt="friedrice_img">
       <img class="food-img" src="images/afang.jpg" alt="afang_img">
@@ -103,34 +116,45 @@
       <img class="food-img" src="images/whiterice.jpg" alt="whiterice_img">
     </section>
 
-    <section class="section4">
+    <section id="section4">
       <div class="cafode-box">
       <h2>Catering Services</h2>
       <img class="imagec" src="images/catering services.jpg" alt="buffetset_img">
       <h3>ALL EVENTS</h3>
+      <p>How much food do you need? Get your Catering Order Right.</p>
       <p>
-        KFC can cater to any party or event irrespective of how big or small. We specialize in catering and online restaurant with personalised service and special menus on request. In our menu palette,
-         you’ll discover unique and sophisticated tastes - all of which will help you uncover the true greatness of Nigerian cuisine.
+        KFC can cater to any party or event irrespective of how big or small. We offer catering services to the public. In our menu palette,
+         you’ll discover unique and sophisticated tastes - all of which will help you uncover the true greatness of Nigerian cuisine in your events.
       </p>
       <p>Tell us about your event at contact-us@kfcfoods.com.ng</p>
       </div>
-    </section>
+    </section> 
 
-    <section class="section5">
+    <section id="section5">
       <div class="cafode-box">
         <h2>Food Delivery in Abuja</h2>
         <img class="imagec"  src="images/delivery.jpg" alt="deliveryman_img">
         <h3>GET SERVED LIKE A KING</h3>
         <p>
-          Looking for food delivery in abuja nearby? Not everybody knows or has the time to prepare tasty food.
-          When you want to get served like a king then KFC food delivery services should be your best choice.
+          Not everybody knows or has the time to prepare tasty food. Looking for food delivery in abuja nearby?
+          When you want to get served like a king, then KFC food delivery services should be your best choice.
         </p>
-      </div>
+      </div> 
     </section>
 
+    <section id="section6">
+      <h2>Giving Back to the Society</h2>
+      <p>
+        <q>We make a living by what we get, But we make a life by what we give.<cite>Winston Churchill </cite></q> 
+        We are giving back to the society by making sure our remnant is packaged and given to the hungry people on the street.
+        Charity has 1% of every order that is made on our platform.
+      </p>
+      <button type="button">Donate</button>
+
+    </section>
   </main>
   
-<!--Page Footer-->
+  <!--Page Footer -->
 
   <footer class="footer">
     <h2>Get in Touch</h2>
@@ -139,11 +163,11 @@
         <i class="material-icons footer-icon">phone</i>
         <a class="footer-link" href="#">CONTACT US</a>
       </div>
-      <div class="input-container">
+      <div class="footer-icons-container">
         <i class="material-icons footer-icon">mail</i>
         <a class="footer-link" href="#">HELLO@kfcfoods.com.ng</a>
       </div>
-      <div class="input-container">
+      <div class="footer-icons-container">
         <i class="material-icons footer-icon">place</i>
         <a class="footer-link" href="#">FCDA Housing Scheme Ext 3, Kubwa, Abuja.</a>
       </div>

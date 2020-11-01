@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#main-header {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#brand-logo {
+  height: 100px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+#header-icons {
+  text-align: right;
+  padding-top: 5px;
+  
+}
+
+
+i[class$=bars] {
+  color: darkorange;
+  padding:10px 20px;
+  font-size: 1.45em;
+}
+
+
+.dropbtn {
+  background-color: black;
+  color: orangered;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(17, 9, 9);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(255, 140, 0, 0.562);
+}
+
+#searchbar {
+  position: relative;
+  top: 15px;
+}
+
+#search {
+  padding: 5px;
+  border-radius: 15px;
+  width: 150px;
+  outline: none;
+}
+
+.search-icon {
+  color: orangered;
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+  height: 15px;
+} 
+
+#hidden {
+  display: none;
+}
+
+/*---Navbar Styles--*/
+.navbar {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li a {
+  color: orangered;
+  text-decoration: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.navbar2 {
+  width: 100%;
+  position: relative;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: orangered;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-list li a:hover {
+  background-color: coral;
+  color: black;
+}
+
+
+
+.container {
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#brand-slogan {
+  background-image: url("images/friedrice2.jpg");
+  background-size: 100% 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  color: black;
+  animation-name: menu;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes menu {
+  from {background-image: url("images/friedrice2.jpg");}  
+  to {background-image: url("images/spicywings.jpg");}
+}
+
+#brand-slogan h1 {
+  font-size: 3rem;
+  font-family: Lobster, Helvetica, sans-serif;
+  color: white;
+  margin-top: 0;
+}
+
+#brand-slogan p {
+  color: white;
+  font-size: 2rem;
+  font-family: Lobster, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+/* section2 styles  */
+.menu-box1 .menu {
+  border: 1px solid yellowgreen;
+  text-align: justify;
+  padding: 5px 10px;
+  margin-top: 10px;
+} 
+
+.contact {
+  background-color: lightgrey;
+  padding: 5px;
+  position: relative;
+  margin-top: 5px;
+  bottom: 3px;
+  line-height: 2;
+  
+}
+
+/* section3 styles */
+#section3 {
+  border: 1px solid darkorange;
+  background-color: white;
+  color: orange;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#section3 img, .imagec  {
+  max-width: 100%;
+}
+
+.food-img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+/* section4 styles */
+#section4 {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  color: orange;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* section5 styles */
+#section5 {
+  text-align: center;
+  background-color: white;
+  color: orange;
+  min-height: 300px;
+  width: 100%; 
+  margin-bottom: 0; 
+}
+
+/* cafode box styles */
+.cafode-box {
+  overflow: auto;
+}
+
+.cafode-box p {
+  line-height: 2;
+  color: black;
+  text-align: justify;
+}
+
+/* section6 styles */
+#section6 {
+  background-color: white;
+  color: orange;
+  text-align: center;
+} 
+
+#section6 p {
+  line-height: 2;
+  color: black;
+  text-align: justify;
+} 
+
+#section6 button {
+  width: 30%;
+  color: orangered;
+  background-color: black;
+  padding: 3px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+}
+
+.footer-link {
+  color: orangered;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+
+.footer-link:hover {
+  color: orange;
+}
+
+/*--Footer Styles---*/
+.footer {
+  background-color: black;
+  color: orangered;
+  height: 300px;
+  text-align: center;
+  font-family: "Gabriela", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/*--Styles for my footer icons*/
+.footer-icon {
+  color: black;
+  background-color: orangered;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+  width: 50px;
+  margin-top: 0;
+}
+
+/*footer social images*/
+#ft-socialmedia-icons-bg {
+  height: 20px;
+  width: 100%;
+  background-color: rgba(243, 106, 56, 0.644);
+  margin: 5px 0 20px 0;
+}
+
+i.fa {
+  color: orangered;
+  margin: 0 10px;
+} 
+
+@media screen and (min-width: 600px) {
+  .imagec {
+    float: right;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+  #section4 {
+    text-align: left;
+  }
+  #section5 {
+    text-align: left;
+  }
+  #section6 {
+    text-align: left;
+  }
+
+}
+
+
+
+/****Styles for medium devices.****/
+@media screen and (min-width: 768px) {
+  #main-header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #brand-logo {
+    height: 100px;
+    width: 25%;
+    padding-left: 2%;
+    margin: 0;
+  } 
+
+  
+  #header-icons {
+    width: 20%;
+    position: relative;
+    text-align: right;
+    padding-top: 5px;  
+  }
+
+  #searchbar {
+    /* position: absolute;
+    right: 10px; */
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar2 {
+    width: 50%;
+    
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  #hidden {
+    display: block;
+  }
+
+  .section2 {
+    max-width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  
+  .menu-box1 {
+    display: flex;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .menu-box1 .menu {
+    border: 1px solid yellowgreen;
+    padding: 5px 10px;
+    margin: 10px auto 10px 10px;
+  } 
+  
+  .menu h2, .menu h4 {
+    padding: 0;
+    margin-top: 0;
+  }
+   
+  .menu p {
+    margin-bottom: 5px;
+    line-height: 2;
+  }
+
+  .contact {
+    background-color: lightgrey;
+    padding: 5px;
+    position: relative;
+    margin-top: 5px;
+    bottom: 3px;
+    line-height: 2;
+    
+  }
+
+  .imagec {
+    float: right;
+    margin:0 0 5px 30px
+  }
+  
+  #section4 {
+    text-align: left;
+  }
+  #section5 {
+    text-align: left;
+  }
+  #section6 {
+    text-align: left;
+  }
+
+}
+
+/****Styles for large devices***/
+@media screen and (min-width: 1024px) {
+  #brand-slogan {
+    height: 400px;
+  }
+
+  #brand-slogan p {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  #brand-slogan h1 {
+    margin-top: 0;
+    font-size: 5rem;
+  }
+  
+  .container {
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cafode-box, #section6 {
+    margin: 0 20px;
+  }
+
+  .imagec {
+    border-radius: 50%;
+  }
+
+
+  .footer h2 {
+    min-height: 20px;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    min-height: 150px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .footer-icons-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;  
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+}
