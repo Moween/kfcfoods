@@ -22,25 +22,23 @@
 <body>
   <!-- Page header -->
   <header id="main-header">
-    <div id="header-icons">
-      <span id="searchbar">
+    <div id="searchbar">
         <i class="fa fa-search search-icon"></i>
-        <input type="text" name="search" id="search" placeholder="Search">
-      </span>
-    </div>
-    <nav class="navbar dropdown">
-      <i class="dropbtn fa fa-bars"></i>
-      <ul class="dropdown-content">
-        <li><a class="nav-link"  href="#">Menu</a></li>
-        <li><a class="nav-link" href="#">Order</a></li>
-        <li><a class="nav-link" href="#">About Us</a></li>
-        <li><a class="nav-link" href="#">Donate</a></li>
-      </ul>
-    </nav>
+        <input type="text" name="search" id="search" placeholder="search">
+    </div>    
     <div class="brand-logo-wrap">
       <a href="index.html"><img id="brand-logo" src="images/brand_logo.jpg" alt="brand_logo"></a>
     </div>
-    <nav class="navbar2">
+    <nav id="navbar">
+      <div class="dropdown">
+        <i class="dropbtn fa fa-bars"></i>
+        <ul class="dropdown-content">
+          <li><a class="nav-link"  href="#">Menu</a></li>
+          <li><a class="nav-link" href="#">Order</a></li>
+          <li><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Donate</a></li>
+        </ul>
+      </div>
       <ul class="nav-list">
         <li><a class="nav-link"  href="#">Home</a></li>
         <li><a class="nav-link" href="#">Contact Us</a></li>
@@ -48,7 +46,7 @@
         <li><a class="nav-link" href="#">Blog</a</li>
         <li><a class="nav-link" id="hidden" href="#">Errand Services</a></li>
         <li><a class="nav-link" id="hidden" href="#">About</a></li>
-      </ul>
+      </ul>     
     </nav>
   </header>
 
