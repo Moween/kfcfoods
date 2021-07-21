@@ -21,38 +21,29 @@
 
 <body>
   <!-- Page header -->
-  <header id="main-header">
-    <div id="searchbar">
-        <i class="fa fa-search search-icon"></i>
-        <input type="text" name="search" id="search" placeholder="search">
-    </div>    
-    <div class="brand-logo-wrap">
-      <a href="index.html"><img id="brand-logo" src="images/brand_logo.jpg" alt="brand_logo"></a>
-    </div>
-    <nav id="navbar">
-      <div class="dropdown">
-        <i class="dropbtn fa fa-bars"></i>
-        <ul class="dropdown-content">
-          <li><a class="nav-link"  href="#">Menu</a></li>
-          <li><a class="nav-link" href="#">Order</a></li>
-          <li><a class="nav-link" href="#">About Us</a></li>
-          <li><a class="nav-link" href="#">Donate</a></li>
-        </ul>
+  <header id="main-header">      
+    <div class="limited clearfix flex-nav">
+      <div class="brand-logo-container">
+        <a href="index.html"><img id="brand-logo" src="images/brand_logo.jpg" alt="brand_logo"></a>
       </div>
-      <ul class="nav-list">
-        <li><a class="nav-link"  href="#">Home</a></li>
-        <li><a class="nav-link" href="#">Contact Us</a></li>
-        <li><a class="nav-link" href="#">Order</a></li>
-        <li><a class="nav-link" href="#">Blog</a</li>
-        <li><a class="nav-link" id="hidden" href="#">Errand Services</a></li>
-        <li><a class="nav-link" id="hidden" href="#">About</a></li>
-      </ul>     
-    </nav>
+      <nav id="navbar">
+        <i class="dropbtn fa fa-bars"></i>
+        <ul class="nav-list">
+          <li><a class="nav-link"  href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Contact Us</a></li>
+          <li><a class="nav-link" href="#">Order</a></li>
+          <li><a class="nav-link" href="#">Blog</a</li>
+          <li class="hidden"><a class="nav-link" href="#">Errand Services</a></li>
+          <li class="hidden"><a class="nav-link" href="#">About</a></li>
+        </ul>                  
+      </nav>      
+      
+    </div>
   </header>
 
   <!--Main content-->
 
-  <main class="container">
+  <main class="container limited">
     <section>
       <div id="brand-slogan">
         <p>---Satisfaction Assured.</p>
@@ -104,15 +95,80 @@
       <h2>KFC Menu</h2>
       <h4>You Don't Need a Silver Spoon to Eat Good Food.</h4>
       <h3>LOVE BY MANY</h3>
-      <img class="food-img" src="images/smallchops.jpg" alt="smallchops_img">
-      <img class="food-img" src="images/friedrice.jpg" alt="friedrice_img">
-      <img class="food-img" src="images/afang.jpg" alt="afang_img">
-      <img class="food-img" src="images/stew.jpg" alt="stew_img">
-      <img class="food-img" src="images/egusi.jpg" alt="egusi_img">
-      <img class="food-img" src="images/jollofrice.jpg" alt="jollofrice_img">
-      <img class="food-img" src="images/ofadarice.jpg" alt="ofadarice_img">
-      <img class="food-img" src="images/noodles.jpg" alt="noodles_img">
-      <img class="food-img" src="images/whiterice.jpg" alt="whiterice_img">
+      <div class="flexbox">
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/smallchops.jpg" 
+            alt="smallchops_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/friedrice.jpg" 
+            alt="friedrice_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/afang.jpg" 
+            alt="afang_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/stew.jpg" 
+            alt="stew_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/egusi.jpg" 
+            alt="egusi_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/jollofrice.jpg" 
+            alt="jollofrice_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/ofadarice.jpg" 
+            alt="ofadarice_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/noodles.jpg" 
+            alt="noodles_img"
+          >
+        </div>
+        <div class="menu-img-cont">
+          <img class="food-img" 
+            width="150" 
+            height="150" 
+            src="images/whiterice.jpg" 
+            alt="whiterice_img"
+          >
+        </div>
+      </div>
     </section>
 
     <section id="section4">
@@ -156,28 +212,31 @@
   <!--Page Footer -->
 
   <footer class="footer">
-    <h2>Get in Touch</h2>
-    <nav class="footer-nav-list">
-      <div class="footer-icons-container">
-        <i class="material-icons footer-icon">phone</i>
-        <a class="footer-link" href="#">CONTACT US</a>
-      </div>
-      <div class="footer-icons-container">
-        <i class="material-icons footer-icon">mail</i>
-        <a class="footer-link" href="#">HELLO@kfcfoods.com.ng</a>
-      </div>
-      <div class="footer-icons-container">
-        <i class="material-icons footer-icon">place</i>
-        <a class="footer-link" href="#">FCDA Housing Scheme Ext 3, Kubwa, Abuja.</a>
-      </div>
-    </nav>  
-    <div id="ft-socialmedia-icons-bg">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-youtube"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>      
-    <div>&copy;2020 KLASSIC FOOD COURT. ALL RIGHTS RESERVED.</div>
+    <section class="limited">
+      <h2>Get in Touch</h2>
+      <nav class="footer-nav-list">
+        <div class="footer-icons-container">
+          <i class="material-icons footer-icon">phone</i>
+          <a class="footer-link" href="#">CONTACT US</a>
+        </div>
+        <div class="footer-icons-container">
+          <i class="material-icons footer-icon">mail</i>
+          <a class="footer-link" href="#">HELLO@kfcfoods.com.ng</a>
+        </div>
+        <div class="footer-icons-container">
+          <i class="material-icons footer-icon">place</i>
+          <a class="footer-link" href="#">FCDA Housing Scheme Ext 3, Kubwa, Abuja.</a>
+        </div>
+      </nav>  
+      <div id="ft-socialmedia-icons-bg">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>      
+      <div>&copy;2020 KLASSIC FOOD COURT. ALL RIGHTS RESERVED.</div>
+    </section>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
